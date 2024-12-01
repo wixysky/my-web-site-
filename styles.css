@@ -1,0 +1,217 @@
+/* Общие настройки */
+* {
+  margin: 30;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(90deg, #00e1ff, #9900ff);
+  color: white;
+  line-height: 1.6;
+}
+
+/* Шапка страницы */
+header {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  padding-top: 80px; /* Добавляем отступ сверху, чтобы шапка не перекрывала sticky text */
+}
+
+.logo img {
+  border-radius: 50%;
+}
+
+.about-me {
+  margin-left: 20px;
+}
+
+.about-me h1 {
+  font-size: 28px;
+}
+
+.about-me p {
+  font-size: 16px;
+}
+
+/* Галерея */
+.gallery {
+  text-align: center;
+  margin: 20px;
+}
+
+.main-image {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.main-image img {
+  width: 100%;
+  max-width: 1250px;
+  height: auto;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  max-width: 90%;
+  word-wrap: break-word;
+  box-sizing: border-box;
+}
+
+.small-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.small-images img {
+  width: 32%; /* Размещение в один ряд на больших экранах */
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.small-images img:hover {
+  transform: scale(1.1);
+}
+
+/* Отзывы */
+.reviews {
+  padding: 20px;
+  text-align: center;
+}
+
+.stars {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.star {
+  color: #ccc;
+}
+
+.star.selected {
+  color: gold;
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.review-form input, .review-form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #ffffff;
+  color: white;
+}
+
+.review-form button {
+  background: #000000;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.review-form button:disabled {
+  background: #000000;
+  color: white;
+}
+
+.reviews-list {
+  margin-top: 20px;
+  padding: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.review-item {
+  background: #2c3e50;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.review-item h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.review-item p {
+  font-size: 16px;
+}
+
+#average-rating {
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Контакты */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000000;
+  color: white;
+}
+
+footer h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+footer p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+/* Sticky Text */
+.sticky-text {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgb(0, 0, 0);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 15px;
+  z-index: 1000;
+}
+
+/* Анимация при входе */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+body {
+  animation: fadeIn 1.5s;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .main-image img {

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I am a web designer creating unique websites from scratch. Discounts for first-time customers.">
+    <meta name="keywords" content="web designer, website creation, unique projects, web design, discounts, business websites">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="Web Designer — Unique Projects">
+    <meta property="og:description" content="Professional web designer. I create websites from scratch. 20% discount for the first 5 customers.">
+    <meta property="og:image" content="img/1.webp">
+    <meta property="og:url" content="https://yoursite.com">
+    <meta name="twitter:title" content="Web Designer — Unique Projects">
+    <meta name="twitter:description" content="Professional web designer. I create websites from scratch. 20% discount for the first 5 customers.">
+    <meta name="twitter:image" content="img/1.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Web Designer — Unique Projects</title>
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "name": "Web Designer — Unique Projects",
+      "url": "https://yoursite.com",
+      "description": "Professional web designer. I create websites from scratch. 20% discount for the first 5 customers.",
+      "author": {
+        "@type": "Person",
+        "name": "Your Name"
+      }
+    }
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- A fixed sticky message on top of the page -->
+    <div class="sticky-text">
+        Discount until December 31st - 20% off, hurry up!
+    </div>
+
+    <!-- Page header -->
+    <header>
+        <div class="logo">
+            <img src="img/1.webp" alt="Logo" width="200" height="200">
+        </div>
+        <div class="about-me">
+            <h1>About Me</h1>
+            <p>I am a web designer, and I will create a website for you exactly how you want it: stylish, easy, and creative. You can be sure of my experience and work — everything will be done to the highest level.</p>
+        </div>
+    </header>
+
+    <!-- Gallery -->
+    <section class="gallery">
+        <div class="main-image">
+            <img src="img/2.jpg" alt="Main Image">
+            <div class="overlay-text">
+                I work with HTML, JavaScript, and CSS. As you can see, this website was created to the highest level, with attention to every detail. You can contact me, and I will do everything for a small budget. Contact details are below.
+            </div>
+        </div>
+        <div class="small-images">
+            <img src="img/3.jpg" alt="Image 1">
+            <img src="img/4.jpg" alt="Image 2">
+            <img src="img/5.jpg" alt="Image 3">
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews">
+        <h2>Reviews</h2>
+        <div class="stars">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        </div>
+
+        <form id="review-form" class="review-form">
+            <input type="text" id="name" placeholder="Your name" required>
+            <textarea id="comment" placeholder="Your review" required></textarea>
+            <button type="submit" disabled>Send</button>
+        </form>
+
+        <div id="average-rating"></div> <!-- Average rating -->
+        <div id="reviews-list"></div> <!-- Reviews list -->
+        <button id="load-more">Show more</button>
+    </section>
+
+    <!-- Contact -->
+    <footer>
+        <h2>Contact</h2>
+        <p>Email: wixysky007@gmail.com</p>
+        <p>Number: +996 999 69 00 42</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
