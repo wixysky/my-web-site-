@@ -212,6 +212,56 @@ body {
   animation: fadeIn 1.5s;
 }
 
-/* Адаптивность */
+/* Добавляем адаптивность */
 @media (max-width: 768px) {
-  .main-image img {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-me {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .gallery .main-image img {
+    max-width: 100%;
+  }
+
+  .small-images {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .small-images img {
+    width: 100%;
+  }
+
+  .review-form {
+    width: 90%;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-me h1 {
+    font-size: 22px;
+  }
+
+  .about-me p {
+    font-size: 14px;
+  }
+
+  .review-form input, .review-form textarea {
+    font-size: 14px;
+  }
+
+  .sticky-text {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
